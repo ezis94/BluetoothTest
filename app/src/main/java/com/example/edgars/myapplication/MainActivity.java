@@ -45,7 +45,7 @@ public class MainActivity extends Activity
         myLabel = (TextView)findViewById(R.id.label);
         myTextbox = (EditText)findViewById(R.id.entry);
 
-        //Open Button
+        //Open Button0
         openButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
