@@ -109,7 +109,7 @@ public class MainActivity extends Activity
         {
             for(BluetoothDevice device : pairedDevices)
             {
-                if(device.getName().equals("MattsBlueTooth"))
+                if(device.getName().equals("itead"))
                 {
                     mmDevice = device;
                     break;
@@ -121,7 +121,7 @@ public class MainActivity extends Activity
 
     void openBT() throws IOException
     {
-        UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805f9b34fb"); //Standard SerialPortService ID
+        UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB"); //Standard SerialPortService ID
         mmSocket = mmDevice.createRfcommSocketToServiceRecord(uuid);
         mmSocket.connect();
         mmOutputStream = mmSocket.getOutputStream();
